@@ -2,7 +2,7 @@ import numpy as np
 from sklearn.cluster import DBSCAN
 from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
-from sklearn.datasets.samples_generator import make_blobs
+from sklearn.datasets import make_blobs
 
 # Create random data and store in feature matrix X and response vector y
 X, y = make_blobs(n_samples=1500, centers=[[2, 1], [-4, -2], [1, -4]], cluster_std=0.7)
